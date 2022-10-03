@@ -1,14 +1,14 @@
-name: Kubescape scanning for misconfigurations
+name: Kubescape scanning for misconfigurations - main
 on:
   push:
     branches:
       - "test-release"
 jobs:
-  kubescape-v0-beta:
+  kubescape-main:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: kubescape/github-action@v0-beta
+    - uses: kubescape/github-action@main
       continue-on-error: true
       with:
         # Optional - Fail pipeline if at least one control has a severity that is at or above the specified severity threshold
