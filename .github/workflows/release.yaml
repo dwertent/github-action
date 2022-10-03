@@ -67,3 +67,4 @@ jobs:
           tag_name: v1.0.${{ github.run_number }}
           draft: false
           prerelease: false
+          
